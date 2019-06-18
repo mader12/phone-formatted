@@ -1,17 +1,17 @@
 {
-  "name": "mader12/debug",
+  "name": "mader12/phone-formatted",
   "type": "library",
-  "description": "Debug",
+  "description": "The package for return formatted phone number of user's mask given from ten numbers which is in the DB table. ",
   "keywords": [
-    "debug"
+    "phone-formatted"
   ],
-  "homepage": "https://github.com/mader12/debug",
+  "homepage": "https://github.com/mader12/phone-formatted",
   "varsion": "0.0.1",
   "license": "MIT",
   "authors": [
     {
       "name": "MIhail Drozhzhinov",
-      "email": "j.mader12@yandex.ru",
+      "email": "mader12@yandex.ru",
       "homepage": "http://arinterier.ru",
       "role": "Developer"
     }
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "D\\": "src/"
+      "phoneformatted\\": "src/"
     }
   }
 }
