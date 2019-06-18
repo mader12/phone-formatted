@@ -3,8 +3,12 @@
  composer require "mader12/phone-formatted @dev" 
  
 # USE
+use phoneformatted\PhoneFormatted;
 
 PhoneFormatted::masked($phonenumber, $mask, $region);
+# OR
+\phoneformatted\PhoneFormatted::masked($phonenumber, $mask, $region);
+
 
 # Example
 
