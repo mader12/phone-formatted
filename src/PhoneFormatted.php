@@ -6,24 +6,21 @@
  * Time: 22:51
  */
 
-namespace PhoneFormatted;
+namespace phoneformatted;
 
 class PhoneFormatted
 {
-    public static function masked($numbers, $mask = '(###) ###-##-##', $region = '+7')
+    public static function masked($numbers, $mask = '(###) ###-##-##', $region = '+7 ')
     {
-        try {
-            $numbers = (string) $numbers;
-            if (substr_count($mask, '#') == strlen($numbers)) {
-                foreach (explode('', $numbers) as $num) {
-                    $mask = str_replace_once('#', $num, $mask);
-                }
+        $numbers = (string) $numbers;
 
-                return $mask;
+        if (substr_count($mask, '#') == strlen($numbers)) {
+
+            foreach (str_split($numbers) as $num) {
+                $mask = self::str_replace_once('#', $num, $mask);
             }
 
-        } catch (\Exception $e) {
-            var_dump('Err');
+            return $region.$mask;
         }
     }
 
