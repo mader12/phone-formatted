@@ -1,0 +1,27 @@
+{
+  "name": "mader12/debug",
+  "type": "library",
+  "description": "Debug",
+  "keywords": [
+    "debug"
+  ],
+  "homepage": "https://github.com/mader12/debug",
+  "varsion": "0.0.1",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MIhail Drozhzhinov",
+      "email": "j.mader12@yandex.ru",
+      "homepage": "http://arinterier.ru",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "D\\": "src/"
+    }
+  }
+}
